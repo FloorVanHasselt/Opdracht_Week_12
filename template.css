@@ -1,0 +1,283 @@
+body{
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+nav li {
+      padding: 8px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+}
+
+a:hover{
+  border-bottom: 2px solid #36ad34;
+}
+
+a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: black;
+}
+
+nav{
+      width: 100%;
+      background-color: #FFF;
+      box-sizing: border-box;
+      margin-top: 10px;
+}
+
+#logo{
+  background-image: url("svg/OxfamLogo2017.svg");
+  height: 50px;
+  width: 140px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  margin: auto;
+}
+
+#ontdek{
+  margin-top: 20px;
+  background-color: #36ad34;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+#ontdek:hover{
+   box-shadow: 2px 2px 5px 1px #000;
+}
+
+.keuzenav{
+  margin-top: 12px;
+}
+
+#midden{
+  display: none;
+}
+
+#afb1{
+  background-image: url("afb/traktor.jpg");
+  height: 50vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+}
+
+#textafb1{
+  position: relative;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: -40vh;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  padding: 3%;
+}
+
+#textafb1 p{
+  font-size: 1em;
+}
+#textafb1 h1{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#groenekader{
+  position: relative;
+  top: -220px;
+  width: 100vw;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 250px 250px;
+}
+
+#kader1{
+  background-image:url("afb/kader1.jpg");
+  background-size: cover;
+  padding: 3%;
+  grid-column: 1;
+   grid-row: 1;
+}
+
+#kader2{
+  background-image:url("afb/kader3.jpg");
+  background-size: cover;
+  padding: 3%;
+  grid-column: 1;
+     grid-row: 2;
+}
+
+#kader3{
+  background-image:url("afb/rijst.jpg");
+  background-size: cover;
+  padding: 3%;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.icoon{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.kader p{
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+
+#activiteiten{
+  width: 80vw;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 100px 100px 45px;
+  margin-top: -150px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#act1{
+  padding: 3%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#act2{
+  padding: 3%;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#act3{
+  padding: 3%;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#act4{
+  padding: 3%;
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#mijnButton{
+background-color: #36ad34;
+color: white;
+border: none;
+height: 35px;
+padding: 10px;
+padding-bottom: 12px;
+font-size: 1.1em;
+
+}
+
+h3{
+  font-size: 1.5em;
+  color:#36ad34;
+  margin-bottom: 4px;
+}
+
+.act{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.locatie{
+  font-size: 0.8em;
+  color: #36ad34;
+}
+
+footer{
+  text-align: center;
+}
+
+#logoFooter{
+  height: 30px;
+  width: 90px;
+  margin: auto;
+}
+
+
+
+
+
+@media(min-width: 600px){
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav{
+        width: 90%;
+        margin-left: 5%;
+  }
+  #kleinscherm{
+    display: none;
+  }
+  #midden{
+    display: block;
+  }
+
+#activiteiten {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 30px;
+}
+#act1 {
+      grid-column: 1;
+      grid-row: 1;
+}
+#act2{
+      grid-column: 2;
+      grid-row: 1;
+}
+ #act3{
+      grid-column: 3;
+       grid-row: 1;
+}
+#act4{
+    grid-column: 2;
+      grid-row: 2;
+}
+}
+
+
+@media(min-width: 1000px) {
+
+    #groenekader {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px;
+  }
+  #kader1 {
+        grid-column: 1;
+        grid-row: 1;
+  }
+  #kader2{
+        grid-column: 2;
+        grid-row: 1;
+  }
+   #kader3{
+        grid-column: 3;
+         grid-row: 1;
+  }
+
+  #textafb1{
+    top: -40vh;
+  }
+
+}

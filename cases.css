@@ -1,0 +1,235 @@
+body{
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+nav li {
+      padding: 8px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+}
+
+a:hover{
+  border-bottom: 2px solid #36ad34;
+}
+
+a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: black;
+}
+
+nav{
+      width: 100%;
+      background-color: #FFF;
+      box-sizing: border-box;
+      margin-top: 10px;
+}
+
+#logo{
+  background-image: url("svg/OxfamLogo2017.svg");
+  height: 50px;
+  width: 140px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  margin: auto;
+}
+
+
+
+.keuzenav{
+  margin-top: 12px;
+}
+
+#midden{
+  display: none;
+}
+
+#leesmeer{
+  color: white;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+
+
+
+
+
+#groenekader{
+  width: 90vw;
+  margin-left: 5vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 250px);
+  text-align: center;
+}
+
+#kader1{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#kader2{
+  background-image:url("afb/cacao1.jpeg");
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#kader3{
+  background-image:url("afb/cacao2.jpg");
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+
+#kader4{
+  background-image:url("afb/thee1.jpg");
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 5;
+}
+
+#kader5{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#kader6{
+  background-image:url("afb/thee2.jpg");
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 6;
+}
+#kader7{
+  background-image:url("afb/rijst1.jpeg");
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 9;
+}
+#kader8{
+  background-image:url("afb/rijst2.jpg");
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 8;
+}
+
+
+#kader9{
+  grid-column: 1;
+  grid-row: 7;
+}
+
+
+.icoon{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+.kader{
+  padding: 10%;
+}
+
+.kader p{
+  color: white;
+  margin: 20px;
+  text-align: center;
+
+}
+
+.schaduw{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.groen{
+  background-color: #36ad34;
+}
+
+footer{
+  text-align: center;
+}
+
+#logoFooter{
+  height: 30px;
+  width: 90px;
+  margin: auto;
+  margin: 30px;
+}
+
+
+
+@media(min-width: 600px){
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav{
+        width: 90%;
+        margin-left: 5%;
+  }
+  #kleinscherm{
+    display: none;
+  }
+  #midden{
+    display: block;
+  }
+}
+
+
+@media(min-width: 1000px) {
+
+  #groenekader {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px;
+  }
+  #kader1 {
+        grid-column: 1;
+        grid-row: 1;
+  }
+  #kader2{
+        grid-column: 2;
+        grid-row: 1;
+  }
+   #kader3{
+        grid-column: 3;
+         grid-row: 1;
+  }
+  #kader4 {
+        grid-column: 1;
+        grid-row: 2;
+  }
+  #kader5{
+        grid-column: 2;
+        grid-row: 2;
+  }
+   #kader6{
+        grid-column: 3;
+         grid-row: 2;
+  }
+  #kader7 {
+        grid-column: 1;
+        grid-row: 3;
+  }
+  #kader8{
+        grid-column: 2;
+        grid-row: 3;
+  }
+   #kader9{
+        grid-column: 3;
+         grid-row: 3;
+  }
+}
